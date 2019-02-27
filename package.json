@@ -1,0 +1,38 @@
+{
+  "name": "fnkg-keytranslator",
+  "version": "1.0.0",
+  "description": "Translator for KeyboardEvent.key variants of different browsers",
+  "main": "dist/js/key-translate.js",
+  "files": [
+    "dist/"
+  ],
+  "types": "dist/declarations/key-translate.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miller45/fnkg-keytranslator.git"
+  },
+  "keywords": [
+    "typescript",
+    "javascript",
+    "keycodes",
+    "key",
+    "ts",
+    "event.key"
+  ],
+  "author": {
+    "name": "Ramon Klein",
+    "email": "gmse45forse@googlemail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miller45/fnkg-keytranslator/issues"
+  },
+  "homepage": "https://github.com/miller45/fnkg-keytranslator#readme",
+  "devDependencies": {
+    "ts-node": "^6.1.1",
+    "typescript": "^2.9.1"
+  }
+}
