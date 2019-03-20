@@ -20,10 +20,17 @@ import { KeyTranslate } from 'fnkg-keytranslator';
 
 ...
 onKeydown(ev: KeyboardEvent) {
-    
-    if (KeyTranslate(ev.key) === Key.ArrowUp) {
-            // do something when user pressed the directional up key.
-    }
+  const tkey = KeyTranslate(ev);
+  switch (tkey) {
+    case Key.ArrowUp:
+      // do something when user pressed the directional up key.
+      console.log('up');
+      break;
+    case Key.ArrowDown:
+      // do something when user pressed the directional down key.
+      console.log('down');
+      break;
+  }
 }
 ...
 ```

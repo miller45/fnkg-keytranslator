@@ -63,3 +63,6 @@ typings/
 .idea
 
 .vscode
+
+#I am bold: I think my code will compile with lossy package requirements
+package-lock.json
