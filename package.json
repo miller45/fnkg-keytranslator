@@ -33,13 +33,14 @@
   },
   "homepage": "https://github.com/miller45/fnkg-keytranslator#readme",
   "devDependencies": {
-    "browserify": "^16.5.0",
-    "karma": "^3.1.4",
-    "karma-browserify": "^6.1.0",
-    "karma-jasmine": "^2.0.1",
-    "karma-phantomjs-launcher": "^1.0.4",
-    "ts-node": "^6.1.1",
-    "typescript": "^2.9.1",
-    "watchify": "^3.11.1"
+    "@types/jasmine": "^2.5.35",
+    "jasmine-core": "^3.3.0",
+    "karma": "^3.1.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-spec-reporter": "0.0.32",
+    "karma-typescript": "latest",
+    "typescript": "latest"
   }
 }
