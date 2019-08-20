@@ -9,7 +9,7 @@
   "types": "dist/declarations/key-translate.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "karma run"
+    "test": "karma start"
   },
   "repository": {
     "type": "git",
