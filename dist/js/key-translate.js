@@ -58,7 +58,7 @@ function KeyTranslate(event) {
         if (key == null) {
             return 'Unidentified';
         }
-        if (key.startsWith('U+')) {
+        if (key.indexOf('U+') === 0) {
             key = String.fromCharCode(parseInt(key.substring(2), 16));
             if (event.location === DOM_KEY_LOCATION_NUMPAD && _chromeNumKeyPadMap.hasOwnProperty(key)) {
                 // There is a bug in Chrome for numeric keypad keys:
