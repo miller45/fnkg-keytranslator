@@ -20,8 +20,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-About 90% Percent of the code is copied angular platform browser adapter.
-The licence for this code follows:
+About 90% Percent of the code is copied from the angular platform browser adapter.
+The licence for their code is the following:
 
 The MIT License
 
