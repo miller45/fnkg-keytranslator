@@ -20,8 +20,8 @@ import { Key } from 'ts-key-enum';
 import { KeyTranslate } from 'fnkg-keytranslator';
 
 ...
-onKeydown(ev: KeyboardEvent) {
-  const tkey = KeyTranslate(ev);
+onKeydown(event: KeyboardEvent) {
+  const tkey = KeyTranslate(event);
   switch (tkey) {
     case Key.ArrowUp:
       // do something when user pressed the directional up key.
@@ -33,5 +33,4 @@ onKeydown(ev: KeyboardEvent) {
       break;
   }
 }
-...
 ```
