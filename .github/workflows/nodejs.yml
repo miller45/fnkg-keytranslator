@@ -3,7 +3,7 @@ name: Node CI
 on:
   push:
     - master
-  [pull_request]
+  - pull_request
 
 jobs:
   build:
