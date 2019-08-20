@@ -1,95 +1,99 @@
-
 import {KeyTranslate} from "./key-translate";
-describe('key-translate ', function () {
+
+describe('key-translate ', () => {
 
 
-    beforeEach(function () {
+    beforeEach(() => {
 
     });
 
-    describe('breaking cases',function(){
-        it('throws on null/undefined', function () {
-            expect(function(){KeyTranslate(null)}).toThrow();
-            expect(function(){KeyTranslate(undefined)}).toThrow();
+    describe('breaking cases', function () {
+        it('throws on null/undefined', () => {
+            expect(function () {
+                KeyTranslate(null)
+            }).toThrow();
+            expect(function () {
+                KeyTranslate(undefined)
+            }).toThrow();
         });
 
-        it('returns Unidentified with arbitrary object', function () {
+        it('returns Unidentified with arbitrary object', () => {
             expect(KeyTranslate({})).toEqual("Unidentified");
         });
 
-        it('returns Unidentified with key that is null', function () {
+        it('returns Unidentified with key that is null', () => {
             expect(KeyTranslate({
-                key:null
+                key: null
             })).toEqual("Unidentified");
         });
 
-        it('returns Unidentified with keyIdentifier that is null', function () {
+        it('returns Unidentified with keyIdentifier that is null', () => {
             expect(KeyTranslate({
-                keyIdentifier:null
+                keyIdentifier: null
             })).toEqual("Unidentified");
         });
 
     });
 
-    describe('regular cases',function(){
-        it('Normal key', function () {
+    describe('regular cases', () => {
+        it('Normal key', () => {
             expect(KeyTranslate({
-                key:"A"
+                key: "A"
             })).toEqual("A");
         });
 
-        it('Normal key', function () {
+        it('Normal key', () => {
             expect(KeyTranslate({
-                key:"A"
+                key: "A"
             })).toEqual("A");
         });
 
-        it('Control key Del', function () {
+        it('Control key Del', () => {
             expect(KeyTranslate({
-                key:"Del"
+                key: "Del"
             })).toEqual("Delete");
 
             expect(KeyTranslate({
-                key:"Delete"
+                key: "Delete"
             })).toEqual("Delete");
         });
 
-        it('Control key backspace literal', function () {
+        it('Control key backspace literal', () => {
             expect(KeyTranslate({
-                key:"\b"
+                key: "\b"
             })).toEqual("Backspace");
 
             expect(KeyTranslate({
-                key:"Backspace"
+                key: "Backspace"
             })).toEqual("Backspace");
         });
 
-        it('KeyIdentifier X', function () {
+        it('KeyIdentifier X', () => {
             expect(KeyTranslate({
-                key:null,
-                keyIdentifier:"X"
+                key: null,
+                keyIdentifier: "X"
             })).toEqual("X");
         });
 
-        it('KeyIdentifier Esc', function () {
+        it('KeyIdentifier Esc', () => {
             expect(KeyTranslate({
-                key:null,
-                keyIdentifier:"Esc"
+                key: null,
+                keyIdentifier: "Esc"
             })).toEqual("Escape");
         });
 
-        it('Unicode literal', function () {
+        it('Unicode literal', () => {
             expect(KeyTranslate({
-                key:null,
-                keyIdentifier:"U+0061"
+                key: null,
+                keyIdentifier: "U+0061"
             })).toEqual("a");
         });
 
-        it('Chrome numeric keypad patch', function () {
+        it('Chrome numeric keypad patch', () => {
             expect(KeyTranslate({
-                key:null,
-                keyIdentifier:"U+0046", /* = 'F' */
-                location:3
+                key: null,
+                keyIdentifier: "U+0046", /* = 'F' */
+                location: 3
             })).toEqual("6");
         });
 

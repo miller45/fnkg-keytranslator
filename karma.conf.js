@@ -31,8 +31,9 @@ module.exports = function(config) {
         karmaTypescriptConfig: {
             tsconfig: "./tsconfig.test.json",
             reports:{
-                lcovonly:{
-                    directory:"coverage/lcov"
+                cobertura:{
+                    directory:"coverage",
+                    filename:"cobertura.xml"
                 }
 
             }
@@ -67,16 +68,6 @@ module.exports = function(config) {
 
         // if true, Karma captures browsers, runs the tests and exits
         singleRun: true,
-
-        coverageReporter: {
-            // specify a common output directory
-            dir: 'coverage',
-            reporters: [
-                // reporters not supporting the `file` property
-                { type: 'html', subdir: 'report-html' },
-                { type: 'lcov', subdir: 'report-lcov' }
-            ]
-        }
 
     });
 };
