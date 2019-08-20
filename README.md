@@ -1,3 +1,5 @@
+[![npm](https://img.shields.io/npm/v/fnkg-keytranslator.svg)](https://www.npmjs.com/package/fnkg-keytranslator)
+
 # fnkg-keytranslator
 
 
