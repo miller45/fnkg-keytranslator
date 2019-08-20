@@ -1,5 +1,5 @@
 [![npm](https://img.shields.io/npm/v/fnkg-keytranslator.svg)](https://www.npmjs.com/package/fnkg-keytranslator)
-[![CI](https://github.com/miller45/fnkg-keytranslator/workflows/Node%20CI/badge.svg)](https://github.com/miller45/fnkg-keytranslator/workflows/Node%20CI/badge.svg)
+[![CI](https://github.com/miller45/fnkg-keytranslator/workflows/Node%20CI/badge.svg)](https://github.com/miller45/fnkg-keytranslator/actions)
 
 
 
