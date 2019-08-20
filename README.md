@@ -1,4 +1,4 @@
-[![npm](https://img.shields.io/npm/v/fnkg-keytranslator.svg)](https://www.npmjs.com/package/fnkg-keytranslator)
+[![npm version](https://img.shields.io/npm/v/fnkg-keytranslator.svg)](https://www.npmjs.com/package/fnkg-keytranslator)
 [![CI](https://github.com/miller45/fnkg-keytranslator/workflows/Node%20CI/badge.svg)](https://github.com/miller45/fnkg-keytranslator/actions)
 [![codecov](https://codecov.io/gh/miller45/fnkg-keytranslator/branch/master/graph/badge.svg)](https://codecov.io/gh/miller45/fnkg-keytranslator)
 
