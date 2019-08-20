@@ -7,5 +7,7 @@
         "outDir": "dist/js",
         "lib": ["es5", "es6"]
     },
-    "files": ["key-translate.ts"]
+    "files": [
+        "src/key-translate.ts"
+    ]
 }
