@@ -24,18 +24,20 @@ The 'key' value can then be used in conjunction with the package ts-key-enum : h
 import { Key } from 'ts-key-enum';
 import { KeyTranslate } from 'fnkg-keytranslator';
 
-...
-onKeydown(event: KeyboardEvent) {
-  const tkey = KeyTranslate(event);
-  switch (tkey) {
-    case Key.ArrowUp:
-      // do something when user pressed the directional up key.
-      console.log('up');
-      break;
-    case Key.ArrowDown:
-      // do something when user pressed the directional down key.
-      console.log('down');
-      break;
-  }
+export class ExampleComponent{
+   /* imagine other component code here */
+   onKeydown(event: KeyboardEvent) {
+      const tkey = KeyTranslate(event);
+      switch (tkey) {
+         case Key.ArrowUp:
+            // do something when user pressed the directional up key.
+            console.log('up');
+            break;
+         case Key.ArrowDown:
+            // do something when user pressed the directional down key.
+            console.log('down');
+            break;
+     }
+   }
 }
 ```
