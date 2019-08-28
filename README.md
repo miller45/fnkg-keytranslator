@@ -6,10 +6,10 @@
 # fnkg-keytranslator
 
 
-Translates the KeyboardEvent.key code (which is the "offical" successor of KeyboardEvent.keyCode) a to value common on all browsers.
+Translates the KeyboardEvent.key code (which is the "offical" successor of KeyboardEvent.keyCode) to a value common on all browsers.
 
-The KeyboardEvent.keyCode is deprecated according to this source: https://developer.mozilla.org/de/docs/Web/API/KeyboardEvent/keyCode.
-If you are using typescript and are using the keyCode you are probably seeing the 'keyCode is deprecated' message'.
+_The KeyboardEvent.keyCode is deprecated according to this source: https://developer.mozilla.org/de/docs/Web/API/KeyboardEvent/keyCode.
+If you are using typescript and are using the keyCode you are probably seeing the 'keyCode is deprecated' message'._
 
 The problem with using the successor KeyboardEvent.key, is that the codes differ among browsers (see https://caniuse.com/#search=KeyboardEvent.key).
 
