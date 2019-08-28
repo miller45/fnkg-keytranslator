@@ -21,8 +21,8 @@ The 'key' value can then be used in conjunction with the package ts-key-enum : h
 
 ```typescript
 import {Component, OnInit} from '@angular/core';
-import {KeyTranslate} from "fnkg-keytranslator";
-import {Key} from "ts-key-enum";
+import {KeyTranslate} from 'fnkg-keytranslator';
+import {Key} from 'ts-key-enum';
 
 @Component({
     selector: 'app-keyco',
