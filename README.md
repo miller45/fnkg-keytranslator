@@ -17,28 +17,30 @@ conforms to this standard: https://developer.mozilla.org/en-US/docs/Web/API/Keyb
 
 The 'key' value can then be used in conjunction with the package ts-key-enum : https://www.npmjs.com/package/ts-key-enum.
 
-# Example
+# TypeScript Example
 
 ```typescript
+import {Component, OnInit} from '@angular/core';
+import {KeyTranslate} from "fnkg-keytranslator";
+import {Key} from "ts-key-enum";
 
-import { Key } from 'ts-key-enum';
-import { KeyTranslate } from 'fnkg-keytranslator';
-
-export class ExampleComponent{
-   /* imagine other component code here */
-   onKeydown(event: KeyboardEvent) {
-      const tkey = KeyTranslate(event);
-      switch (tkey) {
-         case Key.ArrowUp:
-            // do something when user pressed the directional up key.
-            console.log('up');
-            break;
-         case Key.ArrowDown:
-            // do something when user pressed the directional down key.
-            console.log('down');
-            break;
-     }
-   }
+@Component({
+    selector: 'app-keyco',
+    template: '<input type="text" (keydown)="onKeydown($event)">',
+})
+export class TestComponent {
+    onKeydown(event: KeyboardEvent) {
+        const tkey = KeyTranslate(event);
+        switch (tkey) {
+            case Key.ArrowUp:
+                // do something when user pressed the directional up key.
+                console.log('up');
+                break;
+            case Key.ArrowDown:
+                // do something when user pressed the directional down key.
+                console.log('down');
+                break;
+        }
+    }
 }
 ```
-
